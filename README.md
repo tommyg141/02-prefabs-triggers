@@ -1,5 +1,10 @@
 # Unity week 2: Prefabs, triggers, coroutines
 
+NOTE: When you first open this project, you may not see the text in the score field.
+This is because TextMesh Pro is not in the project.
+The Unity Editor should hopefully prompt you to import TextMeshPro;
+once you do this, re-open the scenes, and you should be able to see the texts.
+
 ## Credits
 
 Online courses:
