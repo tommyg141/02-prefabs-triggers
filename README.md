@@ -1,7 +1,6 @@
 # Unity week 2: Formal elements
 
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity,
-including: 
+A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
 
 * Prefabs for instantiating new objects;
 * Colliders for triggering outcomes of actions;
