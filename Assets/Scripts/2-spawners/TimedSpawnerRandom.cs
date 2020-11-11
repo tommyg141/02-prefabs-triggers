@@ -7,9 +7,8 @@ public class TimedSpawnerRandom: MonoBehaviour {
     [SerializeField] Vector3 velocityOfSpawnedObject;
     [Tooltip("Minimum time between consecutive spawns, in seconds")] [SerializeField] float minTimeBetweenSpawns = 1f;
     [Tooltip("Maximum time between consecutive spawns, in seconds")] [SerializeField] float maxTimeBetweenSpawns = 3f;
-    [Tooltip("Maximum distance in X between spawner and spawned objects, in units")] [SerializeField] float maxXDistance = 0.5f;
+    [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")] [SerializeField] float maxXDistance = 0.5f;
 
-    // Start is called before the first frame update
     void Start() {
         this.StartCoroutine(SpawnRoutine());
     }
