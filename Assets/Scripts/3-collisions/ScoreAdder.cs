@@ -12,6 +12,7 @@ public class ScoreAdder : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == triggeringTag) {
             scoreField.SetNumber(scoreField.GetNumber() + pointsToAdd);
+            GAME_STATUS.playerScore = scoreField.GetNumber(); // Keep the score for the next level
         }
     }
 
