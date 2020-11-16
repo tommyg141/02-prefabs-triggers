@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cd8fbea89778946aace769a962b58c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 4-level-2
+  sceneName: level-2
   scoreField: {fileID: 1811610590}
 --- !u!1 &1811610584
 GameObject:
