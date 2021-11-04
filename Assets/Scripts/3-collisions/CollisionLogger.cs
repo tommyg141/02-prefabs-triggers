@@ -16,7 +16,7 @@ public class CollisionLogger : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         Collider2D other = collision.collider;
-        Debug.Log(this.name + " Collision 2D with " + other.name + " tag=" + collision.collider.tag);
+        Debug.Log(this.name + " Collision 2D with " + other.name + " tag=" + other.tag);
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -25,6 +25,6 @@ public class CollisionLogger : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision) {
         Collider other = collision.collider;
-        Debug.Log(this.name + " Collision with " + other.name + " tag=" + collision.collider.tag);
+        Debug.Log(this.name + " Collision with " + other.name + " tag=" + other.tag);
     }
 }

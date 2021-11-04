@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 /**
@@ -9,11 +7,7 @@ using UnityEngine;
  */
 [RequireComponent(typeof(TextMeshPro))]
 public class NumberField : MonoBehaviour {
-    private TextMeshPro textField;
     private int number;
-    void Start()    {
-        textField = GetComponent<TextMeshPro>();
-    }
 
     public int GetNumber() {
         return this.number;
@@ -21,6 +15,10 @@ public class NumberField : MonoBehaviour {
 
     public void SetNumber(int newNumber) {
         this.number = newNumber;
-        this.textField.text = newNumber.ToString();
+        GetComponent<TextMeshPro>().text = newNumber.ToString();
+    }
+
+    public void AddNumber(int toAdd) {
+        SetNumber(this.number + toAdd);
     }
 }

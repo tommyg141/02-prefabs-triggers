@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 /**
- * This component spawns the given object at random time-intervals.
+ * This component spawns the given object at fixed time-intervals at its object position.
  */
 public class TimedSpawner: MonoBehaviour {
     [SerializeField] Mover prefabToSpawn;

@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 5fd46a445338b1248ad1daf37cb1156e
+guid: d90128471c17cc94188f4ac97621603c
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: x25_sprite_0
+    second: f_100_sprite_0
   - first:
       213: 21300002
-    second: x25_sprite_1
+    second: f_100_sprite_1
   - first:
       213: 21300004
-    second: x25_sprite_2
+    second: f_100_sprite_2
   - first:
       213: 21300006
-    second: x25_sprite_3
+    second: f_100_sprite_3
   - first:
       213: 21300008
-    second: x25_sprite_4
+    second: f_100_sprite_4
   - first:
       213: 21300010
-    second: x25_sprite_5
+    second: f_100_sprite_5
   - first:
       213: 21300012
-    second: x25_sprite_6
+    second: f_100_sprite_6
   - first:
       213: 21300014
-    second: x25_sprite_7
+    second: f_100_sprite_7
+  - first:
+      213: 21300016
+    second: f_100_sprite_8
+  - first:
+      213: 21300018
+    second: f_100_sprite_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,12 +121,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: x25_sprite_0
+      name: f_100_sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,12 +142,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_1
+      name: f_100_sprite_1
       rect:
         serializedVersion: 2
-        x: 400
+        x: 300
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,12 +163,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_2
+      name: f_100_sprite_2
       rect:
         serializedVersion: 2
-        x: 800
+        x: 600
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,12 +184,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_3
+      name: f_100_sprite_3
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 900
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -199,12 +205,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_4
+      name: f_100_sprite_4
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1200
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -220,12 +226,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_5
+      name: f_100_sprite_5
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 1500
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -241,12 +247,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_6
+      name: f_100_sprite_6
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 1800
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -262,12 +268,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_7
+      name: f_100_sprite_7
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 2100
         y: 0
-        width: 400
+        width: 300
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,6 +284,48 @@ TextureImporter:
       bones: []
       spriteID: e2305410000000000800000000000000
       internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_100_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_100_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 300
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []

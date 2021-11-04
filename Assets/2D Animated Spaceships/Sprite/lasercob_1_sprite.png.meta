@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 5fd46a445338b1248ad1daf37cb1156e
+guid: fb8709f6a71196a49a1e417bf0aae183
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: x25_sprite_0
+    second: lasercob_1_sprite_0
   - first:
       213: 21300002
-    second: x25_sprite_1
+    second: lasercob_1_sprite_1
   - first:
       213: 21300004
-    second: x25_sprite_2
+    second: lasercob_1_sprite_2
   - first:
       213: 21300006
-    second: x25_sprite_3
+    second: lasercob_1_sprite_3
   - first:
       213: 21300008
-    second: x25_sprite_4
+    second: lasercob_1_sprite_4
   - first:
       213: 21300010
-    second: x25_sprite_5
+    second: lasercob_1_sprite_5
   - first:
       213: 21300012
-    second: x25_sprite_6
+    second: lasercob_1_sprite_6
   - first:
       213: 21300014
-    second: x25_sprite_7
+    second: lasercob_1_sprite_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: x25_sprite_0
+      name: lasercob_1_sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,7 +136,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_1
+      name: lasercob_1_sprite_1
       rect:
         serializedVersion: 2
         x: 400
@@ -157,7 +157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_2
+      name: lasercob_1_sprite_2
       rect:
         serializedVersion: 2
         x: 800
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_3
+      name: lasercob_1_sprite_3
       rect:
         serializedVersion: 2
         x: 1200
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_4
+      name: lasercob_1_sprite_4
       rect:
         serializedVersion: 2
         x: 1600
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_5
+      name: lasercob_1_sprite_5
       rect:
         serializedVersion: 2
         x: 2000
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_6
+      name: lasercob_1_sprite_6
       rect:
         serializedVersion: 2
         x: 2400
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: x25_sprite_7
+      name: lasercob_1_sprite_7
       rect:
         serializedVersion: 2
         x: 2800
