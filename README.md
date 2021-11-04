@@ -10,9 +10,13 @@ Text explanations are available
 [here](https://github.com/erelsgl-at-ariel/gamedev-5782) in folder 04.
 
 ## Cloning
-To clone the project, you may need to install git lfs first:
+To clone the project, you may need to install git lfs first (if it is not already installed):
 
     git lfs install 
+
+To clone faster, you can limit the depth to 1 like this:
+
+    git clone --depth=1 https://github.com/<repository-name>.git
 
 When you first open this project, you may not see the text in the score field.
 This is because `TextMeshPro` is not in the project.
