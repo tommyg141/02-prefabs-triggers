@@ -7,12 +7,19 @@ A project with step-by-step scenes illustrating some of the formal elements of g
 * Coroutines for setting time-based rules.
 
 Text explanations are available 
-[here](https://github.com/erelsgl-at-ariel/gamedev-5780) in folder 06.
+[here](https://github.com/erelsgl-at-ariel/gamedev-5782) in folder 04.
 
-NOTE: When you first open this project, you may not see the text in the score field.
-This is because TextMesh Pro is not in the project.
+## Cloning
+To clone the project, you may need to install git lfs first:
+
+    git lfs install 
+
+When you first open this project, you may not see the text in the score field.
+This is because `TextMeshPro` is not in the project.
 The Unity Editor should hopefully prompt you to import TextMeshPro;
 once you do this, re-open the scenes, and you should be able to see the texts.
+
+
 
 ## Credits
 
