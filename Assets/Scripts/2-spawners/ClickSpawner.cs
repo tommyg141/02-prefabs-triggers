@@ -2,16 +2,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /**
  * This component spawns the given object whenever the player clicks a given key.
  */
-public class KeyboardSpawner: MonoBehaviour {
-    [SerializeField] protected KeyCode keyToPress;
+public class ClickSpawner: MonoBehaviour {
+    [SerializeField] protected InputAction spawnAction = new InputAction(type: InputActionType.Button);
     [SerializeField] protected GameObject prefabToSpawn;
     [SerializeField] protected Vector3 velocityOfSpawnedObject;
 
+    void OnEnable()  {
+        spawnAction.Enable();
+    }
+
+    void OnDisable()  {
+        spawnAction.Disable();
+    }
+
     protected virtual GameObject spawnObject() {
+        Debug.Log("Spawning a new object");
+
         // Step 1: spawn the new object.
         Vector3 positionOfSpawnedObject = transform.position;  // span at the containing object position.
         Quaternion rotationOfSpawnedObject = Quaternion.identity;  // no rotation.
@@ -27,7 +38,7 @@ public class KeyboardSpawner: MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(keyToPress)) {
+        if (spawnAction.WasPressedThisFrame()) {
             spawnObject();
         }
     }
