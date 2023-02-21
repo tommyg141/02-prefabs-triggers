@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,17 +9,16 @@ public class Clock : MonoBehaviour
     [SerializeField] int ticks = 0;
     [SerializeField] Text textField;
 
-    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Tick());
+        Tick();
     }
 
-    IEnumerator Tick() {
+    async void Tick() {
         while (true) {
             ticks++;
             textField.text = ticks.ToString();
-            yield return new WaitForSeconds(1);
+            await Task.Delay(1000);  // wait 1 second
         }
     }
 }

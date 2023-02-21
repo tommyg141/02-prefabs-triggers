@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class ShieldThePlayer : MonoBehaviour {
@@ -9,20 +10,21 @@ public class ShieldThePlayer : MonoBehaviour {
             Debug.Log("Shield triggered by player");
             var destroyComponent = other.GetComponent<DestroyOnTrigger2D>();
             if (destroyComponent) {
-                destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
+                // destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
                 // NOTE: If you just call "StartCoroutine", then it will not work, 
                 //       since the present object is destroyed!
+                ShieldTemporarily(destroyComponent);
                 Destroy(gameObject);  // Destroy the shield itself - prevent double-use
             }
         } else {
             Debug.Log("Shield triggered by "+other.name);
         }
     }
-    private IEnumerator ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {
+    private async void ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {
         destroyComponent.enabled = false;
         for (float i = duration; i > 0; i--) {
             Debug.Log("Shield: " + i + " seconds remaining!");
-            yield return new WaitForSeconds(1);
+            await Task.Delay(1000);  // wait for 1 second
         }
         Debug.Log("Shield gone!");
         destroyComponent.enabled = true;

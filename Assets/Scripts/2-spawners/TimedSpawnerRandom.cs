@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 /**
@@ -12,13 +13,13 @@ public class TimedSpawnerRandom: MonoBehaviour {
     [Tooltip("Maximum distance in X between spawner and spawned objects, in meters")] [SerializeField] float maxXDistance = 0.5f;
 
     void Start() {
-        this.StartCoroutine(SpawnRoutine());
+        _ = SpawnRoutine();
     }
 
-    private IEnumerator SpawnRoutine() {
+    async Task SpawnRoutine() {
         while (true) {
-            float timeBetweenSpawns = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
-            yield return new WaitForSeconds(timeBetweenSpawns);
+            float timeBetweenSpawnsInSeconds = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+            await Task.Delay((int)(timeBetweenSpawnsInSeconds*1000));
             Vector3 positionOfSpawnedObject = new Vector3(
                 transform.position.x + Random.Range(-maxXDistance, +maxXDistance),
                 transform.position.y,
