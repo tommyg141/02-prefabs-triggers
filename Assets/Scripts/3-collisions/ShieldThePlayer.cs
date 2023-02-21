@@ -10,10 +10,10 @@ public class ShieldThePlayer : MonoBehaviour {
             Debug.Log("Shield triggered by player");
             var destroyComponent = other.GetComponent<DestroyOnTrigger2D>();
             if (destroyComponent) {
-                // destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
-                // NOTE: If you just call "StartCoroutine", then it will not work, 
-                //       since the present object is destroyed!
-                ShieldTemporarily(destroyComponent);
+                // destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));  // co-routines
+                    // NOTE: If you just call "StartCoroutine", then it will not work, 
+                    //       since the present object is destroyed!
+                ShieldTemporarily(destroyComponent);                                      // async-await
                 Destroy(gameObject);  // Destroy the shield itself - prevent double-use
             }
         } else {
@@ -24,7 +24,8 @@ public class ShieldThePlayer : MonoBehaviour {
         destroyComponent.enabled = false;
         for (float i = duration; i > 0; i--) {
             Debug.Log("Shield: " + i + " seconds remaining!");
-            await Task.Delay(1000);  // wait for 1 second
+            // yield return new WaitForSeconds(1);       // co-routines
+            await Task.Delay(1000);                   // async-await
         }
         Debug.Log("Shield gone!");
         destroyComponent.enabled = true;

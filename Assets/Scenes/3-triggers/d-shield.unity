@@ -685,7 +685,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1359483173}
   - component: {fileID: 1359483177}
-  - component: {fileID: 1359483175}
   - component: {fileID: 1359483174}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -806,14 +805,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1359483177}
   m_maskType: 0
---- !u!222 &1359483175
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359483172}
-  m_CullTransparentMesh: 0
 --- !u!23 &1359483177
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -928,7 +919,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1811610585}
   - component: {fileID: 1811610589}
-  - component: {fileID: 1811610587}
   - component: {fileID: 1811610586}
   - component: {fileID: 1811610590}
   m_Layer: 0
@@ -1050,14 +1040,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1811610589}
   m_maskType: 0
---- !u!222 &1811610587
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811610584}
-  m_CullTransparentMesh: 0
 --- !u!23 &1811610589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1367,7 +1349,15 @@ MonoBehaviour:
     m_Id: 5b3b4c47-8c53-41a2-a4db-96836f44b100
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e3b84f01-1d11-4aec-a909-0193d1ae3192
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Spawn
+      m_Flags: 0
     m_Flags: 0
   prefabToSpawn: {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4,
     type: 3}

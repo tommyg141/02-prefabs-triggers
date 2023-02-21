@@ -28,7 +28,9 @@ public class TimedSpawner: MonoBehaviour {
     // NEW CODE using async-await:
 
     void Start() {
-        _ = SpawnRoutine();    // do not await for this task.
+        // SpawnRoutine();  // generates a warning
+        // SpawnRoutine().GetAwaiter();    
+        _ = SpawnRoutine();  // discard the awaiter - do not wait for this task to finish
         Debug.Log("Start finished");
     }
 
