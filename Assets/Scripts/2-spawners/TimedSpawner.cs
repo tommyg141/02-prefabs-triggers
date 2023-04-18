@@ -9,7 +9,7 @@ public class TimedSpawner: MonoBehaviour {
     [SerializeField] Mover prefabToSpawn;
     [SerializeField] Vector3 velocityOfSpawnedObject;
     [SerializeField] float secondsBetweenSpawns = 1f;
-
+ 
     // OLD CODE using coroutines:
     //
     void Start() {
@@ -24,6 +24,7 @@ public class TimedSpawner: MonoBehaviour {
             yield return new WaitForSeconds(secondsBetweenSpawns);
         }
     }
+   
 
     // NEW CODE using async-await - works on Windows but not on WebGL
     //

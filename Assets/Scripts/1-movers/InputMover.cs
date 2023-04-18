@@ -14,6 +14,12 @@ public class InputMover: MonoBehaviour {
     [SerializeField] InputAction moveHorizontal = new InputAction(type: InputActionType.Button);
     [SerializeField] InputAction moveVertical  = new InputAction(type: InputActionType.Button);
 
+    public float GetSpeed(){
+        return speed;
+    }
+    public void SetSpeed(float newSpeed){
+        speed = newSpeed;
+    }
 
     void OnEnable()  {
         moveHorizontal.Enable();

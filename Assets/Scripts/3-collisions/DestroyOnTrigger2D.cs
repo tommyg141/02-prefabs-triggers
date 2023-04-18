@@ -5,16 +5,33 @@ using UnityEngine;
 /**
  * This component destroys its object whenever it triggers a 2D collider with the given tag.
  */
+ 
 public class DestroyOnTrigger2D : MonoBehaviour {
     [Tooltip("Every object tagged with this tag will trigger the destruction of this object")]
     [SerializeField] string triggeringTag;
-
+  
+  
+    
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == triggeringTag && enabled) {
-            Destroy(this.gameObject);
-            Destroy(other.gameObject);
-        }
+   
+            if(other.tag == triggeringTag && enabled){
+                Debug.Log("Enemy destroyed");
+                Lifecounter life = this.GetComponent<Lifecounter>();
+                if(life !=null)
+                    life.Damage();
+                else
+                    Destroy(gameObject);
+                Destroy(other.gameObject);
+            }
+        //  if (other.tag == triggeringTag && enabled) {
+           
+            
+        //     Destroy(this.gameObject);
+        //     Destroy(other.gameObject);
+        //     }  
+          
     }
+    
 
     private void Update() {
         /* Just to show the enabled checkbox in Editor */
