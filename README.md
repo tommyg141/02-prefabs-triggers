@@ -9,4 +9,4 @@
 ##הכוח החדש שנוסף הוא שינוי מהירות החלילת לזמן קצוב
 #זה נעשה בעזרת שינוי הMover של השחקן 
 #### [view](https://github.com/tommyg141/02-prefabs-triggers/blob/master/Assets/Scripts/3-collisions/MegaFast.cs)
-
+https://tommy-bar.itch.io/spaceshipwithpower
