@@ -8,3 +8,4 @@
 ## הכוח החדש שנוסף הוא שינוי מהירות החלילת לזמן קצוב
 ## [view](https://github.com/tommyg141/02-prefabs-triggers/blob/master/Assets/Scripts/3-collisions/MegaFast.cs)
 ## [view](https://tommy-bar.itch.io/spaceshipwithpower)
+## Youtube gameplay [view](https://youtu.be/4p3Trj5YB0Y)
